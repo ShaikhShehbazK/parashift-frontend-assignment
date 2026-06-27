@@ -1,9 +1,11 @@
-function Home() {
+import LatestFromGround from "../components/latestFromGround/LatestFromGround";
+
+const Home = () => {
   return (
-    <main>
-      <h1 className="text-2xl font-extrabold text-green-600">Latest From The Ground</h1>
-    </main>
+    <>
+      <LatestFromGround />
+    </>
   );
-}
+};
 
 export default Home;

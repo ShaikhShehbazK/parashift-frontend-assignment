@@ -1,11 +1,23 @@
-import React from 'react'
+import BlogCard from "./BlogCard";
+import blogs from "../../data/blogs";
 
 const LatestFromGround = () => {
   return (
-    <div>
-        Latest From the Ground
-    </div>
-  )
-}
+    <section className="max-w-7xl mx-auto px-6 py-16">
+      {/* Header and Tabs will go here later */}
 
-export default LatestFromGround
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        {blogs.map((blog) => (
+          <BlogCard
+            key={blog.id}
+            image={blog.image}
+            title={blog.title}
+            date={blog.date}
+          />
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default LatestFromGround;
