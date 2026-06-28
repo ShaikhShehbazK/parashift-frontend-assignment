@@ -18,19 +18,19 @@ const BlogCard = ({ image, title, date }) => {
         <div className="flex items-center gap-1 lg:gap-2 text-gray-500 text-[11px] lg:text-lg sm:text-base mb-6">
           {/* <CalendarDays size={15 lg:22} strokeWidth={1.5} /> */}
           <CalendarDays className="w-[15px] h-[15px] lg:w-[22px] lg:h-[22px]" strokeWidth={1.5} />
-          <span className="font-medium lg:tracking-tighter">{date}</span>
+          <span className="font-medium lg:tracking-tight">{date}</span>
         </div>
 
         {/* Title + Read More */}
 <div className="">
-  <h3
+  <h2
     className="
       text-[16px]
       sm:text-[20px]
       lg:text-[25px]
 
       font-normal
-      lg:font-medium
+      lg:font-semibold
 
       leading-[1.45]
       text-black
@@ -42,7 +42,7 @@ const BlogCard = ({ image, title, date }) => {
     "
   >
     {title}
-  </h3>
+  </h2>
 
   <button
     className="
@@ -59,16 +59,16 @@ const BlogCard = ({ image, title, date }) => {
 
       px-5
       py-3
-      lg:py-2
 
-      lg:px-7
+      lg:px-5
       lg:py-3
 
       text-[13px]
       sm:text-sm
-      lg:text-base
+      lg:text-[17px]
 
-      font-medium
+      font-semibold
+      lg:font-semibold
       tracking-wide
       uppercase
 

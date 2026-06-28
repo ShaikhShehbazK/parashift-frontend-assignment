@@ -90,8 +90,8 @@ const CategoryTabs = ({ activeTab, setActiveTab }) => {
                     }}
                   >
                     <ArrowUpRight
-                      className="w-9 h-9 xl:w-13 xl:h-13"
-                      strokeWidth={1}
+                      className="w-9 h-9 xl:w-16 xl:h-16"
+                      strokeWidth={0.7}
                     />
                   </motion.div>
                 )}

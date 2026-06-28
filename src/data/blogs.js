@@ -63,6 +63,13 @@ const blogs = [
     image: RENEWABLE,
     category: "Press Release",
   },
+  {
+    id: 9,
+    title: "Quick Commerce Fulfilment Hub for Scootsy (Swiggy)",
+    date: "15 May 2026",
+    image: AUTOMOTIVEC,
+    category: "Blog",
+  },
 ];
 
 export default blogs;
