@@ -2,7 +2,7 @@ import { CalendarDays, ArrowRight } from "lucide-react";
 
 const BlogCard = ({ image, title, date }) => {
   return (
-    <div className="group border border-gray-300 bg-white overflow-hidden cursor-pointer">
+    <div className="group border border-gray-300 bg-white overflow-hidden cursor-pointer h-[480px] lg:h-[550px] sm:h-[500px]">
       {/* Image */}
       <div className="overflow-hidden">
         <img
@@ -13,56 +13,84 @@ const BlogCard = ({ image, title, date }) => {
       </div>
 
       {/* Content */}
-      <div className="relative px-8 py-8 h-[290px] flex flex-col">
+      <div className="relative px-4 lg:px-8 py-8 h-[290px] flex flex-col">
         {/* Date */}
-        <div className="flex items-center gap-2 text-gray-500 text-sm mb-6">
-          <CalendarDays size={18} strokeWidth={1.5} />
-          <span>{date}</span>
+        <div className="flex items-center gap-1 lg:gap-2 text-gray-500 text-[11px] lg:text-lg sm:text-base mb-6">
+          {/* <CalendarDays size={15 lg:22} strokeWidth={1.5} /> */}
+          <CalendarDays className="w-[15px] h-[15px] lg:w-[22px] lg:h-[22px]" strokeWidth={1.5} />
+          <span className="font-medium lg:tracking-tighter">{date}</span>
         </div>
 
         {/* Title + Read More */}
-        <div className="">
-          <h3
-            className="
-              text-[22px]
-              font-medium
-              leading-[1.45]
-              text-black
-              transition-all
-              duration-800
-              group-hover:-translate-y-2
-            "
-          >
-            {title}
-          </h3>
+<div className="">
+  <h3
+    className="
+      text-[16px]
+      sm:text-[20px]
+      lg:text-[25px]
 
-          <button
-            className="
-              mt-10
-              flex
-              items-center
-              gap-2
-              border
-              border-black
-              border-2
-              px-7
-              py-3
-              text-base
-              font-medium
-              tracking-wide
-              uppercase
-              opacity-0
-              translate-y-2
-              transition-all
-              duration-800
-              group-hover:opacity-100
-              group-hover:translate-y-0
-            "
-          >
-            READ MORE
-            {/* <ArrowRight size={18} /> */}
-          </button>
-        </div>
+      font-normal
+      lg:font-medium
+
+      leading-[1.45]
+      text-black
+
+      transition-all
+      duration-800
+
+      lg:group-hover:-translate-y-3
+    "
+  >
+    {title}
+  </h3>
+
+  <button
+    className="
+      mt-8
+      lg:mt-10
+
+      flex
+      items-center
+      gap-2
+
+      border
+      lg:border-2
+      border-black
+
+      px-5
+      py-3
+      lg:py-2
+
+      lg:px-7
+      lg:py-3
+
+      text-[13px]
+      sm:text-sm
+      lg:text-base
+
+      font-medium
+      tracking-wide
+      uppercase
+
+      transition-all
+      duration-800
+
+      opacity-100
+      translate-y-0
+
+      lg:opacity-0
+      lg:translate-y-5
+
+      lg:group-hover:opacity-100
+      lg:group-hover:translate-y-0
+
+      hover:cursor-pointer
+    "
+  >
+    READ MORE
+    {/* <ArrowRight size={18} /> */}
+  </button>
+</div>
       </div>
     </div>
   );

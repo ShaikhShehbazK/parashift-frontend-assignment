@@ -3,7 +3,7 @@ import React from 'react'
 const SectionHeader = () => {
   return (
     <div>
-        Section Header
+        SectionHeader
     </div>
   )
 }
