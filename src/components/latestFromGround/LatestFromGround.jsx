@@ -2,6 +2,7 @@ import { useState } from "react";
 import BlogCard from "./BlogCard";
 import CategoryTabs from "./CategoryTabs";
 import blogs from "../../data/blogs";
+import SectionHeader from "./SectionHeader";
 
 const LatestFromGround = () => {
   const [activeTab, setActiveTab] = useState("Blog");
@@ -12,6 +13,7 @@ const LatestFromGround = () => {
 
   return (
     <section className="max-w-[1645px] mx-auto px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20 py-12 lg:py-16">
+      <SectionHeader/>
       {/* Category Tabs */}
       <CategoryTabs
         activeTab={activeTab}
@@ -25,7 +27,7 @@ const LatestFromGround = () => {
           mt-10
           grid
           grid-cols-1
-          sm:grid-cols-2
+          md:grid-cols-2
           xl:grid-cols-3
           gap-5
           lg:gap-6
