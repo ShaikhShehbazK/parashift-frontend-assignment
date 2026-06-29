@@ -9,6 +9,7 @@ const EmblaCarousel = ({ blogs }) => {
     loop: false,
     align: "start",
     dragFree: false,
+    duration: 13,
   });
 
   const [canScrollPrev, setCanScrollPrev] = useState(false);
@@ -46,8 +47,8 @@ const EmblaCarousel = ({ blogs }) => {
   return (
     <div className="relative">
       {/* Carousel */}
-      <div className="overflow-hidden" ref={emblaRef}>
-        <div className="flex xl:mt-3 sm:mt-0 mt-0">
+      <div className="overflow-hidden touch-pan-x" ref={emblaRef}>
+        <div className="flex xl:mt-3 sm:mt-0 mt-0 select-none">
           {blogs.map((blog) => (
             <div
               key={blog.id}

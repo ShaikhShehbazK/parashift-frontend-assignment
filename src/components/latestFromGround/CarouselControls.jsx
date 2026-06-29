@@ -15,7 +15,7 @@ const CarouselControl = ({
         className="
           w-13 h-13
           sm:w-16 sm:h-16
-          lg:w-23 lg:h-23
+          lg:w-20 lg:h-20
           border border-[#D6D6D6]
           flex items-center justify-center
           bg-white
@@ -38,7 +38,7 @@ const CarouselControl = ({
         className="
           w-13 h-13
           sm:w-16 sm:h-16
-          lg:w-23 lg:h-23
+          lg:w-20 lg:h-20
           border border-[#D6D6D6]
           flex items-center justify-center
           bg-white
