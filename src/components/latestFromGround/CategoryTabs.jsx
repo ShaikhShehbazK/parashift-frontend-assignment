@@ -8,7 +8,6 @@ const CategoryTabs = ({ activeTab, setActiveTab }) => {
       <div className="flex overflow-hidden rounded-[13px] sm:rounded-[17px] lg:rounded-[30px] border border-[#D9D9D9] bg-white">
         {tabs.map((tab, index) => {
           const active = activeTab === tab;
-
           return (
             <button
               key={tab}
@@ -26,14 +25,15 @@ const CategoryTabs = ({ activeTab, setActiveTab }) => {
                 justify-center
                 lg:justify-between
 
-                px-2
+                 px-2
                 sm:px-4
-                lg:px-7
+                lg:px-5
 
                 text-[12px]
                 sm:text-[12px]
-                lg:text-[20px]
-                xl:text-[25px]
+                lg:text-[16px]
+                xl:text-[23px]
+                2xl:text-[25px]
                 leading-tight
                 lg:leading-normal
 
@@ -90,7 +90,7 @@ const CategoryTabs = ({ activeTab, setActiveTab }) => {
                     }}
                   >
                     <ArrowUpRight
-                      className="w-9 h-9 xl:w-16 xl:h-16"
+                      className="w-9 h-9 lg:w-11 lg:h-11 xl:w-14 xl:h-14 2xl:w-16 2xl:h-16"
                       strokeWidth={0.7}
                     />
                   </motion.div>

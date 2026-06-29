@@ -16,7 +16,7 @@ const LatestFromGround = () => {
       <CategoryTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
       {/* Embla Carousel */}
-      <div className="mt-10">
+      <div className="mt-4 min-[1300px]:mt-10">
         {filteredBlogs.length > 0 ? (
           <EmblaCarousel key={activeTab} blogs={filteredBlogs} />
         ) : (

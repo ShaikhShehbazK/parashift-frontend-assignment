@@ -85,7 +85,8 @@ const EmblaCarousel = ({ blogs }) => {
       gap-3
       bg-black
       text-[13px]
-      lg:text-[17px]
+      lg:text-[15px]
+      xl:text-[17px]
 
       font-semibold
       text-white
@@ -104,7 +105,7 @@ const EmblaCarousel = ({ blogs }) => {
   >
     VIEW ALL
     <ArrowUpRight
-                      className="w-6 h-6 xl:w-10 xl:h-10"
+                      className="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"
                       strokeWidth={1}
                     />
   </button>
