@@ -8,8 +8,8 @@ import EmblaCarousel from "./EmblaCarousel";
 const FADE_DURATION = 0.4;
 
 const LatestFromGround = () => {
-  const [activeTab, setActiveTab] = useState("Blog");
-  const [displayedTab, setDisplayedTab] = useState("Blog");
+  const [activeTab, setActiveTab] = useState("Case Studies");
+  const [displayedTab, setDisplayedTab] = useState("Case Studies");
   const [showContent, setShowContent] = useState(true);
   const [pendingTab, setPendingTab] = useState(null);
 

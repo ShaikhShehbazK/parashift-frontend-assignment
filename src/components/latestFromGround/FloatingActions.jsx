@@ -1,5 +1,6 @@
 import React from "react";
-import { MessageSquareMore } from "lucide-react";
+// import { MessageSquareMore } from "lucide-react";
+import { MessageSquare } from "lucide-react";
 
 const FloatingActions = () => {
   return (
@@ -88,20 +89,20 @@ const FloatingActions = () => {
   </button>
 </div>
 
-      {/* Floating Chat Button */}
+       {/* Floating Chat Button */}
       <button
         className="
           fixed
           right-4
           bottom-18
-          lg:bottom-6
+          lg:bottom-15
           z-50
 
           w-12
           h-12
           sm:w-13
           sm:h-13
-          
+
           rounded-full
           bg-[#8D4BB3]
           text-white
@@ -118,10 +119,10 @@ const FloatingActions = () => {
           hover:scale-110
         "
       >
-        <MessageSquareMore
-          className="w-5 h-5 sm:w-6 sm:h-6"
+        <MessageSquare
+          className="w-5 h-5"
           strokeWidth={2}
-          bg-white
+          fill="white"
         />
       </button>
     </>

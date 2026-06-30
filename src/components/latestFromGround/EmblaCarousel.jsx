@@ -48,7 +48,7 @@ const EmblaCarousel = ({ blogs }) => {
     <div className="relative">
       {/* Carousel */}
       <div className="overflow-hidden touch-pan-x" ref={emblaRef}>
-        <div className="flex xl:mt-3 sm:mt-0 mt-0 select-none">
+        <div className="flex -mx-2 xl:mt-3 sm:mt-0 mt-0 select-none ">
           {blogs.map((blog) => (
             <div
               key={blog.id}
