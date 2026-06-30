@@ -1,16 +1,33 @@
-# React + Vite
+Parashift Assignment – UI Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive single-page UI clone built using React and Vite as part of an internship assignment. The goal of this project was to replicate a given reference webpage with pixel-level accuracy, focusing on layout, responsiveness, and modern frontend implementation.
 
-Currently, two official plugins are available:
+🎯 Project Objective
+The objective of this assignment was to:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Recreate a given reference landing page UI
+Match layout, spacing, typography, and overall design
+Ensure responsiveness across devices
+Implement smooth UI interactions and animations where applicable
 
-## React Compiler
+🚀 Live Demo
+https://parashift-assignment.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✨ Features
+Pixel-close UI replication of reference design
+Fully responsive layout (mobile, tablet, desktop)
+Smooth animations and transitions using Framer Motion
+Interactive UI components (carousel/slider where used)
+Modern styling using Tailwind CSS
+Clean and modular component structure
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🛠️ Tech Stack
+React
+Vite
+Tailwind CSS
+Framer Motion
+Embla Carousel
+Swiper.js
+Lucide React
+React Icons
+Google Fonts (Inter, Barlow)
