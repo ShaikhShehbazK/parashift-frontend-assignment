@@ -1,16 +1,20 @@
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
+import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
 import BlogCard from "./BlogCard";
 import CarouselControl from "./CarouselControls";
 import { ArrowUpRight } from "lucide-react";
 
 const EmblaCarousel = ({ blogs }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel({
-    loop: false,
-    align: "start",
-    dragFree: false,
-    duration: 13,
-  });
+  const [emblaRef, emblaApi] = useEmblaCarousel(
+    {
+      loop: false,
+      align: "start",
+      dragFree: false,
+      duration: 25,
+    },
+    [WheelGesturesPlugin({ forceWheelAxis: "x" })],
+  );
 
   const [canScrollPrev, setCanScrollPrev] = useState(false);
   const [canScrollNext, setCanScrollNext] = useState(false);
@@ -70,17 +74,17 @@ const EmblaCarousel = ({ blogs }) => {
       </div>
 
       {/* Navigation */}
-<div className="mt-9 lg:mt-25 flex items-center justify-between">
-  <CarouselControl
-    onPrev={scrollPrev}
-    onNext={scrollNext}
-    canPrev={canScrollPrev}
-    canNext={canScrollNext}
-  />
+      <div className="mt-9 lg:mt-25 flex items-center justify-between">
+        <CarouselControl
+          onPrev={scrollPrev}
+          onNext={scrollNext}
+          canPrev={canScrollPrev}
+          canNext={canScrollNext}
+        />
 
-  {/* View All Button */}
-  <button
-    className="
+        {/* View All Button */}
+        <button
+          className="
       flex
       items-center
       gap-3
@@ -103,14 +107,14 @@ const EmblaCarousel = ({ blogs }) => {
       uppercase
       tracking-wider
     "
-  >
-    VIEW ALL
-    <ArrowUpRight
-                      className="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"
-                      strokeWidth={1}
-                    />
-  </button>
-</div>
+        >
+          VIEW ALL
+          <ArrowUpRight
+            className="w-6 h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"
+            strokeWidth={1}
+          />
+        </button>
+      </div>
     </div>
   );
 };
